@@ -1,0 +1,195 @@
+<html>
+  <head>
+     <title> simple registration form </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+    <style>
+body {
+background-color:linen;
+ }
+* {box-sizing: border-box;}
+input[type=submit]:hover {
+   padding:12px;
+   margin-top:60px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=text], select, textarea {
+  width: 85%;
+  padding: 6px;
+  border-radius: 8px;
+  resize: vertical;
+}
+.btn{
+background-color:#4CAF50;
+color:white;
+padding:16px 20p;
+border:none;
+cursor:pointer;
+border-radius:4px;
+ margin-top:15px;
+}
+.container{
+background-image: url("ankita.jpeg");
+margin:80px auto;
+border-radius: 8px;
+padding: 32px;
+width:45%;
+min-width:300px;
+}
+.col-25{
+float:left;
+width:25%;
+margin-top:8px;
+font-family:bold;
+font-size:18;
+color:white;
+text-shadow: 0px 1px ;
+}
+.col-75{
+float:left;
+width:75%;
+margin-top:6px;
+font-family:bold;
+font-size:16;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+   </style>
+   
+<body>
+
+ <div class="container">
+   <form action='a.php' method="post">
+        <center> <h1 style="color:white"> Register_Form:</h1> </center> <br>
+        <div class="row">
+            <div class="col-25">
+               <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+             </div>
+	    </div>
+	
+	    <div class="row">
+            <div class="col-25">
+               <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            </div>
+	    </div>
+	
+	    <div class="row">
+            <div class="col-25">
+               <label for="addr">Address</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="addr" name="addr" placeholder="Address" required>
+            </div>
+	    </div>
+	
+	    <div class="row">
+            <div class="col-25">
+               <label for="state">State</label>
+            </div>
+            <div class="col-75">
+				<select id="state" name="state">
+				    <option value="Assam-Dispur">State</option>
+					<option value="Andhra Pradesh-Amravati">Andhra Pradesh-Amravati</option>
+					<option value="Arunachal Pradesh-Itanagar">Arunachal Pradesh-Itanagar</option>
+					<option value="Assam-Dispur">Assam-Dispur</option>
+					<option value="Bihar-Patna">Bihar-Patna</option>
+					<option value="Chhattisgarh-Atal Nagar(Naya Raipur)">Chhattisgarh-Atal Nagar(Naya Raipur)</option>
+					<option value="Goa-Panaji">Goa-Panaji</option>
+					<option value="Gujrat-Gandhinagar">Gujrat-Gandhinagar</option>
+					<option value="Haryana-Chandigarh">Haryana-Chandigarh</option>
+					<option value="Himahal Pradesh-Shimla/Dharamshala">Himahal Pradesh-Shimla/Dharamshala</option>
+					<option value="Jammu and Kashmir-Srinagar/Jammu">Jammu and Kashmir-Srinagar/Jammu</option>
+					<option value="Jharkhand-Ranchi">Jharkhand-Ranchi</option>
+					<option value="karnataka-Bengaluru">karnataka-Bengaluru</option>
+					<option value="Kerala-Thiruvananthapuram">Kerala-Thiruvananthapuram</option>
+					<option value="Madhya Pradesh-Bhopal">Madhya Pradesh-Bhopal</option>
+					<option value="Maharashtra-Mumbai">Maharashtra-Mumbai</option>
+					<option value="Manipur-imphal">Manipur-imphal</option>
+					<option value="Meghalaya-Shillong">Meghalaya-Shillong"</option>
+					<option value="Mizoram-Aizawl">Mizoram-Aizawl</option>
+					<option value="Nagaland-Kohima">Nagaland-Kohima</option>
+					<option value="Odisha(Orissa)-Bhubaneswar">Odisha(Orissa)-Bhubaneswar</option>
+					<option value="Punjab-Chandigarh">Punjab-Chandigarh</option>
+					<option value="Rajasthan-Jaipur">Rajasthan-Jaipur</option>
+					<option value="Sikkim-Gangtok">Sikkim-Gangtok</option>
+					<option value="Tamil Nadu-Chennai">Tamil Nadu-Chennai</option>
+					<option value="Telangana-Hyderabad">Telangana-Hyderabad</option>
+					<option value="Tripura-Agartala">Tripura-Agartala</option>
+					<option value="Uttar Pradesh-Lucknow">Uttar Pradesh-Lucknow</option>
+					<option value="Uttarakhand-Dehradun">Uttarakhand-Dehradun</option>
+					<option value="West Bengal-kolkata">West Bengal-kolkata</option>
+				</select>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-25">
+				<label for="Country"> Country </label>
+			</div>
+			<div class="col-75">
+			    <select id="country" name="country">
+				    <option value="American Samoa">Country </option>
+					<option value="American Samoa">American Samoa </option>
+					<option value="Feance">Feance</option>
+					<option value="Hong Kong">Hong Kong</option>
+					<option value="South Africa">South Africa</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="India">India</option>
+					<option value="Australia">Australia</option>
+					<option value="Bangladesh">Bangladesh</option>
+					<option value="Albania">Albania</option>
+					<option value="Afghanistan">Afghanistan</option>
+				</select>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-25">
+				<label for="mobn">Mobile Number</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="mobn" name="mobn" placeholder="Mobile Number" required>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="col-25">
+				<label for="E-mail">E-mail</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="E-mail" name="E-mail" placeholder="E-mail" required>
+			</div>
+		</div>
+	
+		<div class="row">
+				<center> <button type="submit"  class="btn"> Submit </button></center>
+		</div>
+	
+    </form>
+ </div>
+</body>
+</html>
